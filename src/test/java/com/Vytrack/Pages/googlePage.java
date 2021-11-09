@@ -11,6 +11,6 @@ public class googlePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(css="div[id='logo']")
+    @FindBy(css="img[class='lnXdpd']")
     public WebElement GoogleLogo;
 }
