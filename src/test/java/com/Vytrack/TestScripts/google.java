@@ -8,9 +8,9 @@ import org.testng.annotations.Test;
 
 public class google extends TestBase {
 
+    googlePage gp = new googlePage();
 
-
-   @Test
+   @Test(priority = 1)
     @Environment(url = "url_19")
     public void testingPageTitle(){
 
@@ -22,6 +22,15 @@ public class google extends TestBase {
        System.out.println(actualPageTitle.equals(expectedPageTitle));
        Assert.assertEquals(actualPageTitle,expectedPageTitle);
    }
+
+    @Test(priority = 0 )
+    @Environment(url = "url_19")
+    public void testingLogo(){
+
+
+        Assert.assertTrue(gp.GoogleLogo.isDisplayed());
+
+    }
 
 
 }

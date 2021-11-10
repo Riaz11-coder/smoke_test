@@ -46,11 +46,7 @@ public class TestBase implements Environment{
 
     }
 
-    @AfterMethod
-    public void tearDown(){
 
-        driver.quit();
-    }
 
 
     @Override

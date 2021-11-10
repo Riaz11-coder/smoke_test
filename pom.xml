@@ -15,6 +15,7 @@
 
 
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -31,7 +32,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>smoke.xml</suiteXmlFile>
+                        <systemPropertiesFiles>smoke.xml</systemPropertiesFiles>
                     </suiteXmlFiles>
                     <parallel>methods</parallel>
                     <threadCount>4</threadCount>
