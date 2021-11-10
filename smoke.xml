@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="smoke" parallel="methods" thread-count="4">
+    <test name="google">
+        <classes>
+            <class name="com.Vytrack.TestScripts.google" ></class>
+            
+        </classes>
+    </test>
+    <test name="google2">
+    
+        <classes>
+            
+            <class name="com.Vytrack.TestScripts.google2" ></class>
+            
+        </classes>
+    </test>
+    
+
+
+
+</suite>

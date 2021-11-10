@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class google extends TestBase {
 
-    googlePage gp = new googlePage();
+
 
    @Test
     @Environment(url = "url_19")
@@ -23,13 +23,5 @@ public class google extends TestBase {
        Assert.assertEquals(actualPageTitle,expectedPageTitle);
    }
 
-    @Test
-    @Environment(url = "url_19")
-    public void testingLogo(){
-
-
-       Assert.assertTrue(gp.GoogleLogo.isDisplayed());
-
-    }
 
 }
