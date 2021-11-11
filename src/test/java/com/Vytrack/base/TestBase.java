@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 import java.lang.annotation.Annotation;
@@ -18,7 +19,7 @@ public class TestBase implements Environment{
     protected WebDriver driver;
     protected Actions actions;
     protected WebDriverWait wait;
-    protected String url;
+
 
 
 
@@ -44,6 +45,12 @@ public class TestBase implements Environment{
 
         driver.get(ConfigurationReader.getProperty(url));
 
+    }
+
+    @AfterSuite
+    public void tearDown() throws InterruptedException {
+
+        Driver.closeDriver();
     }
 
 
