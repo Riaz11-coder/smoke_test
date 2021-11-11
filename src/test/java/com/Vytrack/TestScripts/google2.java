@@ -17,7 +17,7 @@ public class google2 extends TestBase {
     public void testingLogo(){
 
 
-        Assert.assertTrue(gp.GoogleLogo.isDisplayed());
+        Assert.assertFalse(gp.GoogleLogo.isDisplayed());
 
     }
 }

@@ -27,7 +27,7 @@ public class google extends TestBase {
     @Environment(url = "url_19")
     public void testingLogo(){
 
-
+        TestBase.logger.info("Validating presence of Google Logo on Google Home Page");
         Assert.assertTrue(gp.GoogleLogo.isDisplayed());
 
     }
