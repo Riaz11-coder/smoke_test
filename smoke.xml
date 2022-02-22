@@ -5,7 +5,9 @@
     </listeners>
     <test name="google">
         <classes>
-            <class name="com.Vytrack.TestScripts.google" ></class>
+            <class name="com.Vytrack.TestScripts.google" >
+
+            </class>
             
         </classes>
     </test>
@@ -13,9 +15,31 @@
     
         <classes>
             
-            <class name="com.Vytrack.TestScripts.google2" ></class>
+            <class name="com.Vytrack.TestScripts.google2" >
+
+            </class>
             
         </classes>
+    </test>
+    <test name="Excel">
+
+        <classes>
+
+            <class name="com.Vytrack.TestScripts.ExcelIO">
+
+            </class>
+        </classes>
+
+    </test>
+    <test name="Excel-dataTables">
+
+        <classes>
+
+            <class name="com.Vytrack.TestScripts.dataTables">
+
+            </class>
+        </classes>
+
     </test>
     
 
